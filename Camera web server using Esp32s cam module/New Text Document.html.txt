@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ESP32-CAM Web Server</title>
+</head>
+<body>
+    <h2>ESP32-CAM Web Server</h2>
+    <img src="http://192.168.1.10:81/stream" width="640" height="480">
+    <br>
+    <!-- Step 3: Add the button to control flashlight -->
+    <button onclick="toggleFlashlight()">Toggle Flashlight</button>
+    <script>
+        function toggleFlashlight() {
+            fetch('/flashlight_toggle')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.text();
+                })
+                .then(data => console.log(data))
+                .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+</html>
