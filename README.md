@@ -2,16 +2,6 @@
 
 This repository contains a collection of Internet of Things (IoT) projects developed by Pratik261201. The projects cover various aspects of IoT, including hardware interfacing, sensor data collection, remote monitoring, home automation, and security implementations.
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Projects](#projects)
-- [Getting Started](#getting-started)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ## Overview
 
